@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeTTyBooP Studio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f7fa;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .logo span {
+            color: #ff476f;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+        .info p {
+            margin: 10px 0;
+        }
+        .twitter {
+            margin-top: 30px;
+            font-size: 16px;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            BeTTyBooP Studio<span>®</span>
+        </div>
+        <div class="info">
+            <p>Specialized in creating custom meme coins on the BASE blockchain.</p>
+            <p>Offering collaboration opportunities for marketing and community building.</p>
+            <p>No upfront costs – profit sharing through token distribution.</p>
+        </div>
+        <div class="twitter">
+            Follow us on Twitter: <strong>@BASEmemeprincess</strong>
+        </div>
+    </div>
+</body>
+</html>

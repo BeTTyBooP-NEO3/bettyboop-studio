@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Základní černé pozadí */
+    color: white;
+}
+
+.section {
+    height: 100vh; /* Plná výška obrazovky */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#section1 {
+    background-image: url('path-to-your-image1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#section2 {
+    background-image: url('path-to-your-image2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#section3 {
+    background-image: url('path-to-your-image3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#section4 {
+    background-image: url('path-to-your-image4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

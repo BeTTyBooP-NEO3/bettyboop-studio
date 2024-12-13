@@ -3,9 +3,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
-    background-size: cover;
+    background-size: 100% 7000px; /* Přizpůsobení velikosti obrázku */
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top center; /* Nastavení pozice obrázku */
+    background-attachment: scroll; /* Pohyblivé pozadí při scrollování */
     color: white;
 }
 
@@ -18,7 +19,7 @@ body {
     align-items: center;
     padding: 20px;
     margin: auto; /* Vycentrování na stránce */
-    background-size: cover; /* Zajistí, že obrázek pokryje celou sekci */
+    background-size: cover;
 }
 
 #section1 {
@@ -40,3 +41,4 @@ body {
     background: url('yellow_rectangle.jpg') no-repeat center;
     background-size: cover;
 }
+

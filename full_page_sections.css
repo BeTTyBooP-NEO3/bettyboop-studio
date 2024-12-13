@@ -4,8 +4,8 @@ body {
     background-color: black;
     background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
     background-size: cover;
-    background-position: center;
-    background-attachment: scroll; /* Pohyblivé pozadí při scrollování */
+    background-repeat: no-repeat;
+    background-position: center top;
     color: white;
 }
 
@@ -18,6 +18,7 @@ body {
     align-items: center;
     padding: 20px;
     margin: auto; /* Vycentrování na stránce */
+    background-size: cover; /* Zajistí, že obrázek pokryje celou sekci */
 }
 
 #section1 {

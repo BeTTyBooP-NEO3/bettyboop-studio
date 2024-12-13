@@ -5,7 +5,7 @@ body {
     background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Pohyblivé pozadí při scrollování */
     color: white;
 }
 
@@ -39,4 +39,3 @@ body {
     background: url('yellow_rectangle.jpg') no-repeat center;
     background-size: cover;
 }
-

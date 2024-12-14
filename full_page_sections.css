@@ -5,11 +5,12 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Comic Sans MS', sans-serif;
+    color: black; /* Text bude černý */
 }
 
 /* Nastavení pozadí */
 body {
-    background: url('background-image.jpg') no-repeat center top; /* Zadej cestu k tvému obrázku */
+    background: url('background-image.jpg') no-repeat center top; /* Cesta k tvému obrázku */
     background-size: cover; /* Obrázek vyplní stránku */
     background-attachment: fixed; /* Fixované pozadí */
     overflow-y: auto; /* Povolit vertikální scrollování */
@@ -17,14 +18,15 @@ body {
 
 /* Styly pro sekce */
 .section {
-    min-height: 100vh; /* Zajištění, že sekce zabírá celou výšku obrazovky */
+    min-height: 100vh; /* Sekce zabírá celou výšku obrazovky */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    color: white;
+    background: none; /* Sekce nemá žádnou barvu, je průhledná */
     text-align: center;
+    color: black; /* Text zůstane černý */
 }
 
 /* Textové styly */

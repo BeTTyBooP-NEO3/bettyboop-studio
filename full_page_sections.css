@@ -6,15 +6,13 @@ body, html {
 }
 
 body {
-    background: url('back_rectangle.jpg') no-repeat fixed center top;
-    background-size: 1920px auto;
-    overflow-x: hidden;
+    background: #fff; /* Bílé pozadí pro tělo */
+    overflow-x: hidden; /* Zamezí horizontálnímu scrollování */
 }
 
 .container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 .section {
@@ -25,6 +23,9 @@ body {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    background: url('back_rectangle.jpg') no-repeat center top; /* Pozadí pro každou sekci */
+    background-size: 1920px auto; /* Upravíme pozadí pro správnou velikost */
+    background-attachment: fixed; /* Pozadí bude fixováno při scrollování */
 }
 
 .section-content {

@@ -33,22 +33,5 @@
             </div>
         </section>
     </div>
-
-    <script>
-        // JavaScript pro parallax efekt
-        window.addEventListener('scroll', () => {
-            let scrollPosition = window.pageYOffset;
-
-            // Posuv pozadí pro každou sekci (pohyb pozadí pomaleji)
-            document.querySelectorAll('.section').forEach((section) => {
-                section.style.backgroundPositionY = `${(scrollPosition * 0.5)}px`; // Posun pozadí s rychlostí 50%
-            });
-
-            // Posuv textu pro každou sekci (rychlejší pohyb textu)
-            document.querySelectorAll('.section-content').forEach((content) => {
-                content.style.transform = `translateY(${scrollPosition * 0.8}px)`; // Text se pohybuje rychleji (80%)
-            });
-        });
-    </script>
 </body>
 </html>

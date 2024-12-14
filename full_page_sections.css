@@ -6,6 +6,7 @@ body {
     background-size: cover; /* Zajistí, že obrázek pokryje celou obrazovku */
     background-repeat: no-repeat;
     background-position: center; /* Nastavení pozice obrázku */
+    height: 7000px; /* Nastavení výšky pro celé pozadí */
     color: white;
 }
 
@@ -18,7 +19,6 @@ body {
     align-items: center;
     padding: 20px;
     margin: auto; /* Vycentrování na stránce */
-    background-size: cover;
 }
 
 #section1 {
@@ -40,5 +40,3 @@ body {
     background: url('yellow_rectangle.jpg') no-repeat center;
     background-size: cover;
 }
-
-

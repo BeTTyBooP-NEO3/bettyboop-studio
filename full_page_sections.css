@@ -5,13 +5,14 @@ body {
     background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
     background-size: cover; /* Zajistí, že obrázek pokryje celou obrazovku */
     background-repeat: no-repeat;
-    background-position: center; /* Nastavení pozice obrázku */
+    background-position: top; /* Nastavení pozice obrázku */
+    height: 7000px; /* Nastavení výšky pro celé pozadí */
     color: black; /* Černý text */
 }
 
 .section {
-    height: 100vh; /* Plná výška obrazovky */
-    width: 50vw; /* Poloviční šířka obrazovky */
+    height: 20vh; /* Výška 20 % obrazovky */
+    width: 100vw; /* Celá šířka obrazovky */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,4 +24,5 @@ body {
 .comic-sans-text {
     font-family: 'Comic Sans MS', sans-serif; /* Font Comic Sans MS */
     color: black; /* Černý text */
+    font-size: 2em; /* Větší velikost textu */
 }

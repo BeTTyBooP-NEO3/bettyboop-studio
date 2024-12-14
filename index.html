@@ -5,27 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeTTyBooP Studio</title>
     <link rel="stylesheet" href="full_page_sections.css"> <!-- Odkaz na tvůj CSS soubor -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center top;
+            color: white;
+        }
+
+        .section {
+            height: 100vh; /* Plná výška obrazovky */
+            width: 50vw; /* Poloviční šířka obrazovky */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: auto; /* Vycentrování na stránce */
+            background-size: cover;
+        }
+
+        #section1 {
+            background: url('red_rectangle.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        #section2 {
+            background: url('green_rectangle.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        #section3 {
+            background: url('blue_rectangle.jpg') no-repeat center;
+            background-size: cover;
+        }
+
+        #section4 {
+            background: url('yellow_rectangle.jpg') no-repeat center;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            BeTTyBooP Studio<span>®</span>
-        </div>
-        <div class="info">
-            <p>Creating custom meme coins on the BASE blockchain.</p>
-            <p>Profit sharing via token distribution (no upfront costs).</p>
-            <p>Collaborating with marketing and community builders.</p>
-        </div>
-        <div class="services">
-            <h2>Our Services:</h2>
-            <ul>
-                <li>Custom meme coin creation</li>
-                <li>Marketing collaboration</li>
-                <li>Community building for tokens</li>
-            </ul>
-        </div>
-    </div>
-
     <div class="section" id="section1">
         <h1>Section 1</h1>
         <p>This is the first section of your template.</p>

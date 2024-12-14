@@ -2,28 +2,27 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: black;
-    background-image: url('back_rectangle.jpg'); /* Large background image */
-    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
+    background-size: 100% auto; /* Přizpůsobení šířky obrázku na 100 % šířky obrazovky, zachování poměru stran */
     background-repeat: no-repeat;
-    background-position: top center; /* Position the background image */
-    height: 7000px; /* Set height for the entire background */
-    color: black; /* Black text */
+    background-position: top center; /* Nastavení pozice obrázku */
+    color: black; /* Černý text */
 }
 
 .section {
-    height: 20vh; /* 20% of the screen height for each section */
-    width: 100vw; /* Full screen width */
+    height: 20vh; /* Výška 20 % obrazovky */
+    width: 100vw; /* Celá šířka obrazovky */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: auto; /* Center align the sections */
+    margin: auto; /* Vycentrování na stránce */
 }
 
 .comic-sans-text {
-    font-family: 'Comic Sans MS', sans-serif; /* Comic Sans MS font */
-    color: black; /* Black text */
-    font-size: 3em; /* Increase font size */
-    text-align: center; /* Center align the text */
+    font-family: 'Comic Sans MS', sans-serif; /* Font Comic Sans MS */
+    color: black; /* Černý text */
+    font-size: 5em; /* Větší velikost textu */
+    text-align: center; /* Vycentrování textu */
 }

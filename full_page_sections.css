@@ -19,3 +19,8 @@ body {
     padding: 20px;
     margin: auto; /* Vycentrování na stránce */
 }
+
+.comic-sans-text {
+    font-family: 'Comic Sans MS', sans-serif; /* Font Comic Sans MS */
+    color: black; /* Černý text */
+}

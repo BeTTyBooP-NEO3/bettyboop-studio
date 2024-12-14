@@ -1,35 +1,26 @@
-/* full_page_sections.css */
-
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Comic Sans MS', sans-serif;
-    color: black; /* Text bude černý */
-}
-
-/* Nastavení pozadí */
-body {
-    background: url('background-image.jpg') no-repeat center top; /* Cesta k tvému obrázku */
-    background-size: cover; /* Obrázek vyplní stránku */
+    color: black;
+    background: url('back_rectangle.jpg') no-repeat center top; /* Cesta k obrázku */
+    background-size: cover; /* Obrázek vyplní celý prostor */
     background-attachment: fixed; /* Fixované pozadí */
-    overflow-y: auto; /* Povolit vertikální scrollování */
 }
 
-/* Styly pro sekce */
 .section {
-    min-height: 100vh; /* Sekce zabírá celou výšku obrazovky */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background: none; /* Sekce nemá žádnou barvu, je průhledná */
+    background: none; /* Zajistí průhledné sekce */
     text-align: center;
-    color: black; /* Text zůstane černý */
+    color: black;
 }
 
-/* Textové styly */
 .comic-sans-text {
     font-size: 1.2em;
     line-height: 1.5;

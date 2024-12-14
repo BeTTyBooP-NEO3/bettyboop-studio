@@ -4,48 +4,49 @@ body, html {
     height: 100%;
     font-family: 'Comic Sans MS', sans-serif;
     color: black;
-    background: url('back_rectangle.jpg') no-repeat center bottom; /* Upravila jsem pozadí na dolní část */
-    background-size: cover;
+    background: url('back_rectangle.jpg') no-repeat center bottom; 
+    background-size: 1920px 7000px;
     background-attachment: fixed;
-    background-position: center bottom; /* Udržuje pozadí v dolní části */
+    background-position: center bottom;
 }
 
 .container {
-    width: 80%; /* Nastavíme šířku kontejneru na 80% obrazovky */
-    max-width: 1200px; /* Nastavíme maximální šířku pro větší obrazovky */
-    margin: 0 auto; /* Centering the container */
-    overflow: hidden; /* Skrytí přetečení */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
 }
 
 .section {
-    min-height: 100vh; /* Každá sekce bude minimálně na výšku obrazovky */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background: none; /* Zajistí průhledné pozadí pro sekce */
+    background: none;
     text-align: center;
     color: black;
-    margin-bottom: 20px; /* Mezery mezi sekcemi */
+    margin-bottom: 20px;
 }
 
 .comic-sans-text {
     font-size: 1.2em;
     line-height: 1.5;
-    color: #000; /* Textová barva pro lepší čitelnost */
+    color: #000;
 }
 
 @media screen and (max-width: 768px) {
+    body, html {
+        background-size: cover;
+    }
+    
     .comic-sans-text {
-        font-size: 1em; /* Menší text na mobilních zařízeních */
+        font-size: 1em;
     }
     
     .section {
-        padding: 15px;
-    }
-}
-
         padding: 15px;
     }
 }

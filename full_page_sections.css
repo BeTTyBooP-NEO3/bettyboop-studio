@@ -5,7 +5,7 @@ body {
     background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
     background-size: cover; /* Zajistí, že obrázek pokryje celou obrazovku */
     background-repeat: no-repeat;
-    background-position: center; /* Nastavení pozice obrázku */
+    background-position: top center; /* Nastavení pozice obrázku */
     height: 7000px; /* Nastavení výšky pro celé pozadí */
     color: white;
 }
@@ -19,24 +19,22 @@ body {
     align-items: center;
     padding: 20px;
     margin: auto; /* Vycentrování na stránce */
+    background-size: cover;
+    background-attachment: scroll; /* Zajištění, že se sekce pohybují při rolování */
 }
 
 #section1 {
     background: url('red_rectangle.jpg') no-repeat center;
-    background-size: cover;
 }
 
 #section2 {
     background: url('green_rectangle.jpg') no-repeat center;
-    background-size: cover;
 }
 
 #section3 {
     background: url('blue_rectangle.jpg') no-repeat center;
-    background-size: cover;
 }
 
 #section4 {
     background: url('yellow_rectangle.jpg') no-repeat center;
-    background-size: cover;
 }

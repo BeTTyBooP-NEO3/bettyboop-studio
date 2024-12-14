@@ -8,6 +8,7 @@ body, html {
 body {
     background: url('back_rectangle.jpg') no-repeat fixed center top;
     background-size: 1920px auto;
+    overflow-x: hidden;
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 1;
     overflow: hidden;
 }
 
@@ -31,16 +33,6 @@ body {
     border-radius: 10px;
     max-width: 600px;
     position: relative;
-    transform: translateY(0);
-    transition: transform 0.1s ease;
-}
-
-.section-content {
-    will-change: transform;
-}
-
-@media (min-width: 768px) {
-    .section-content {
-        transform: translateY(calc(var(--scroll) * -0.5));
-    }
+    z-index: 2;
+    transition: transform 0.1s ease-out;
 }

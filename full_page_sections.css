@@ -4,48 +4,48 @@ body, html {
     height: 100%;
     font-family: 'Comic Sans MS', sans-serif;
     color: black;
-    background: url('back_rectangle.jpg') no-repeat center top; /* Ensure path is correct */
+    background: url('back_rectangle.jpg') no-repeat center bottom; /* Upravila jsem pozadí na dolní část */
     background-size: cover;
     background-attachment: fixed;
-    background-position: center; /* Ensures the image is centered */
+    background-position: center bottom; /* Udržuje pozadí v dolní části */
+}
+
+.container {
+    width: 80%; /* Nastavíme šířku kontejneru na 80% obrazovky */
+    max-width: 1200px; /* Nastavíme maximální šířku pro větší obrazovky */
+    margin: 0 auto; /* Centering the container */
+    overflow: hidden; /* Skrytí přetečení */
 }
 
 .section {
-    min-height: 100vh;
+    min-height: 100vh; /* Každá sekce bude minimálně na výšku obrazovky */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background: none;
+    background: none; /* Zajistí průhledné pozadí pro sekce */
     text-align: center;
     color: black;
-    position: relative; /* Needed for overlay */
-}
-
-.section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.5); /* Light overlay for better readability */
-    z-index: -1; /* Keeps the overlay behind the text */
+    margin-bottom: 20px; /* Mezery mezi sekcemi */
 }
 
 .comic-sans-text {
     font-size: 1.2em;
     line-height: 1.5;
-    color: #000; /* Ensure text color stands out */
+    color: #000; /* Textová barva pro lepší čitelnost */
 }
 
 @media screen and (max-width: 768px) {
     .comic-sans-text {
-        font-size: 1em; /* Slightly smaller text on mobile */
+        font-size: 1em; /* Menší text na mobilních zařízeních */
     }
     
     .section {
+        padding: 15px;
+    }
+}
+
         padding: 15px;
     }
 }

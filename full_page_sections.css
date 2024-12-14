@@ -3,9 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: black;
     background-image: url('back_rectangle.jpg'); /* Velký obrázek na pozadí */
-    background-size: contain; /* Přizpůsobení velikosti obrázku pro celý vertikální prostor */
+    background-size: cover; /* Zajistí, že obrázek pokryje celou obrazovku */
     background-repeat: no-repeat;
-    background-position: center top; /* Nastavení pozice obrázku */
+    background-position: center; /* Nastavení pozice obrázku */
     color: white;
 }
 

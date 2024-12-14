@@ -9,9 +9,10 @@ body, html {
 
 /* Nastavení pozadí */
 body {
-    background: url('background-image.jpg') no-repeat center center fixed; /* Zadej cestu k tvému obrázku */
-    background-size: cover;
-    overflow-y: scroll;
+    background: url('background-image.jpg') no-repeat center top; /* Zadej cestu k tvému obrázku */
+    background-size: cover; /* Obrázek vyplní stránku */
+    background-attachment: fixed; /* Fixované pozadí */
+    overflow-y: auto; /* Povolit vertikální scrollování */
 }
 
 /* Styly pro sekce */
@@ -24,24 +25,6 @@ body {
     padding: 20px;
     color: white;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Překrytí pro čitelnost textu */
-}
-
-/* Jednotlivé sekce mohou mít různé styly */
-#section1 {
-    background-color: rgba(255, 0, 0, 0.5);
-}
-
-#section2 {
-    background-color: rgba(0, 255, 0, 0.5);
-}
-
-#section3 {
-    background-color: rgba(0, 0, 255, 0.5);
-}
-
-#section4 {
-    background-color: rgba(255, 255, 0, 0.5);
 }
 
 /* Textové styly */

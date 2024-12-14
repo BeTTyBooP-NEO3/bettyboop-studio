@@ -39,15 +39,14 @@
         window.addEventListener('scroll', () => {
             let scrollPosition = window.pageYOffset;
 
-            // Zajistíme, že pozadí se bude pohybovat pomaleji než text
-            document.querySelectorAll('.section').forEach((section, index) => {
-                // Posuv pozadí (pomalejší pohyb)
-                section.style.backgroundPositionY = `${(scrollPosition * 0.5)}px`;
+            // Posuv pozadí pro každou sekci (pohyb pozadí pomaleji)
+            document.querySelectorAll('.section').forEach((section) => {
+                section.style.backgroundPositionY = `${(scrollPosition * 0.5)}px`; // Posun pozadí s rychlostí 50%
             });
 
-            // Posuv textu (rychlejší pohyb)
+            // Posuv textu pro každou sekci (rychlejší pohyb textu)
             document.querySelectorAll('.section-content').forEach((content) => {
-                content.style.transform = `translateY(${scrollPosition * 0.8}px)`;
+                content.style.transform = `translateY(${scrollPosition * 0.8}px)`; // Text se pohybuje rychleji (80%)
             });
         });
     </script>

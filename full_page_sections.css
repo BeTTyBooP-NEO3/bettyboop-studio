@@ -1,24 +1,24 @@
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     background: url('back_rectangle.jpg') repeat-y center top;
     background-size: 1920px auto;
-    background-attachment: scroll;
+    background-attachment: scroll; /* Klíčová změna */
 }
 
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
-    position: relative;
 }
 
 .section {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Zarovnání textu k vrchu */
+    align-items: center;
     padding: 20px;
     text-align: center;
     position: relative;
@@ -66,3 +66,4 @@ a:hover {
 #section2 {
     margin-top: 20px; /* Sekce 2 začne o něco dřív */
 }
+

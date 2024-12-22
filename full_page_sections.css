@@ -1,27 +1,28 @@
-
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     background: url('back_rectangle.jpg') repeat-y center top;
     background-size: 1920px auto;
-    background-attachment: scroll; /* Klíčová změna */
+    background-attachment: scroll; /* Pozadí se bude rolovat */
 }
 
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 
 .section {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start; /* Zarovnání textu k vrchu */
     padding: 20px;
     text-align: center;
     position: relative;
+    z-index: 2;
 }
 
 h1 {
@@ -60,10 +61,14 @@ a:hover {
 /* Větší mezery mezi sekcemi */
 #section1 {
     margin-bottom: 40px; /* Zvětšíme mezery mezi sekcemi */
-    margin-top: 40px; /* Posunutí textu na začátku sekce 1 */
 }
 
 #section2 {
     margin-top: 20px; /* Sekce 2 začne o něco dřív */
 }
 
+/* Poloprůhledné pozadí pro lepší čitelnost textu */
+.section {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}

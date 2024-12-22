@@ -11,6 +11,8 @@ body, html {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .section {
@@ -20,6 +22,8 @@ body, html {
     align-items: flex-start; /* Ujistíme se, že obsah bude zarovnán od horního okraje */
     padding: 20px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 h1 {
@@ -53,4 +57,10 @@ a:hover {
     width: 150px; /* Nastavte šířku loga */
     height: auto;
     margin-bottom: 20px; /* Mezera pod logem */
+}
+
+/* Zajistí, že pozadí bude správně viditelné a nebude blokováno */
+.section {
+    background-color: rgba(255, 255, 255, 0.7); /* Poloprůhledné pozadí pro lepší čitelnost textu */
+    border-radius: 10px; /* Volitelné pro kulatější rohy */
 }

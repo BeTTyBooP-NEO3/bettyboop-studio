@@ -17,28 +17,40 @@ body, html {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 40px; /* Increased padding for more space */
-    box-sizing: border-box; /* Ensures padding is included in the element's total width/height */
-    text-align: center; /* Centers the content in the section */
+    align-items: flex-start; /* Ujistíme se, že obsah bude zarovnán od horního okraje */
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    font-size: 4em; /* Significantly larger font size */
+    font-size: 3em; /* Zvětšeno pro lepší viditelnost */
     font-weight: bold;
-    margin: 20px 0;
+    margin-bottom: 20px; /* Mezera pod titulkem */
 }
 
 p {
-    font-size: 2em; /* Increased font size for readability */
-    margin: 10px 0;
+    font-size: 1.5em; /* Větší písmo pro text */
+    font-weight: normal;
+    margin-top: 10px; /* Mezera nad textem */
 }
 
-a:link, a:visited, a:hover, a:active {
-    color: white;
+.comic-sans-text {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 1.5em;
+}
+
+a {
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline;
+}
+
+.logo {
+    width: 150px; /* Nastavte šířku loga */
+    height: auto;
+    margin-bottom: 20px; /* Mezera pod logem */
 }

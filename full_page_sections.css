@@ -18,27 +18,25 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-}
-
-.section-content {
-    text-align: center; /* Centers text inside each section */
+    padding: 40px; /* Increased padding for more space */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width/height */
+    text-align: center; /* Centers the content in the section */
 }
 
 h1 {
-    font-size: 3em; /* Adjusted to ensure it's not too large */
+    font-size: 4em; /* Significantly larger font size */
     font-weight: bold;
     margin: 20px 0;
 }
 
 p {
-    font-size: 1.5em; /* Adjusted font size for readability */
+    font-size: 2em; /* Increased font size for readability */
     margin: 10px 0;
 }
 
 a:link, a:visited, a:hover, a:active {
     color: white;
-    text-decoration: none; /* No underline for links */
+    text-decoration: none;
 }
 
 a:hover {

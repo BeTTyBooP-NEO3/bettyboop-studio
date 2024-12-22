@@ -1,10 +1,11 @@
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     background: url('back_rectangle.jpg') repeat-y center top;
     background-size: 1920px auto;
-    background-attachment: scroll; /* Klíčová změna */
+    background-attachment: scroll; /* Pozadí se bude rolovat */
 }
 
 .container {
@@ -12,14 +13,13 @@ body, html {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    z-index: 1;
 }
 
 .section {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Ujistíme se, že obsah bude zarovnán od horního okraje */
+    align-items: flex-start; /* Zarovnání textu k vrchu */
     padding: 20px;
     text-align: center;
     position: relative;
@@ -27,15 +27,15 @@ body, html {
 }
 
 h1 {
-    font-size: 3em; /* Zvětšeno pro lepší viditelnost */
+    font-size: 3em;
     font-weight: bold;
-    margin-bottom: 20px; /* Mezera pod titulkem */
+    margin-bottom: 20px;
 }
 
 p {
-    font-size: 1.5em; /* Větší písmo pro text */
+    font-size: 1.5em;
     font-weight: normal;
-    margin-top: 10px; /* Mezera nad textem */
+    margin-top: 10px;
 }
 
 .comic-sans-text {
@@ -54,13 +54,22 @@ a:hover {
 }
 
 .logo {
-    width: 150px; /* Nastavte šířku loga */
+    width: 150px;
     height: auto;
-    margin-bottom: 20px; /* Mezera pod logem */
+    margin-bottom: 20px;
 }
 
-/* Zajistí, že pozadí bude správně viditelné a nebude blokováno */
+/* Větší mezery mezi sekcemi */
+#section1 {
+    margin-bottom: 40px; /* Zvětšíme mezery mezi sekcemi */
+}
+
+#section2 {
+    margin-top: 20px; /* Sekce 2 začne o něco dřív */
+}
+
+/* Poloprůhledné pozadí pro lepší čitelnost textu */
 .section {
-    background-color: rgba(255, 255, 255, 0.7); /* Poloprůhledné pozadí pro lepší čitelnost textu */
-    border-radius: 10px; /* Volitelné pro kulatější rohy */
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
 }

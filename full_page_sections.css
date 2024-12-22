@@ -20,3 +20,27 @@ body, html {
     align-items: center;
     padding: 20px;
 }
+
+.section-content {
+    text-align: center; /* Centers text inside each section */
+}
+
+h1 {
+    font-size: 3em; /* Adjusted to ensure it's not too large */
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.5em; /* Adjusted font size for readability */
+    margin: 10px 0;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: white;
+    text-decoration: none; /* No underline for links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

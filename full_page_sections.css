@@ -1,67 +1,64 @@
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     background: url('back_rectangle.jpg') repeat-y center top;
     background-size: 1920px auto;
-    background-attachment: scroll;
+    background-attachment: scroll; /* Pozadí se bude rolovat */
 }
-
 .container {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
-
 .section {
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start; /* Zarovnání textu k vrchu */
     padding: 20px;
     text-align: center;
     position: relative;
     z-index: 2;
 }
-
 h1 {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 p {
     font-size: 1.5em;
     font-weight: normal;
     margin-top: 10px;
 }
-
 .comic-sans-text {
     font-family: 'Comic Sans MS', sans-serif;
     font-size: 1.5em;
 }
-
 a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
-
 a:hover {
     text-decoration: underline;
 }
-
 .logo {
-    width: 100px;
+    width: 150px;
     height: auto;
     margin-bottom: 20px;
 }
-
+/* Větší mezery mezi sekcemi */
 #section1 {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Zvětšíme mezery mezi sekcemi */
 }
-
 #section2 {
-    margin-top: 20px;
+    margin-top: 20px; /* Sekce 2 začne o něco dřív */
+}
+/* Poloprůhledné pozadí pro lepší čitelnost textu */
+.section {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
 }
